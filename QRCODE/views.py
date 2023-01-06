@@ -15,7 +15,7 @@ def validateuser(request):
 
     if username=="kasim" and password=="saifi":
          # create QRCODE
-         rno=random.randint(100000 , 999999)
+         rno=random.randint(10000, 99999)
          global otp
          otp = rno
          im=qrcode.make("OTP IS"+str(rno))
